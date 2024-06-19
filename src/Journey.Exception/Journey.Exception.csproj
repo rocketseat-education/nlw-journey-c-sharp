@@ -7,7 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ExceptionsBase\" />
+    <Compile Remove="ResourcesTest.Designer.cs" />
+    <Compile Update="ResourceErrorMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourceErrorMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ResourcesTest.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Remove="ResourcesNovo.resx" />
+    <EmbeddedResource Remove="ResourceErrorMessages.resx" />
+    <Resource Include="ResourceErrorMessages.resx" />
   </ItemGroup>
 
 </Project>

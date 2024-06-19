@@ -16,8 +16,4 @@
     <ProjectReference Include="..\Journey.Exception\Journey.Exception.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>
