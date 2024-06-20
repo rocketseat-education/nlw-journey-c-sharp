@@ -28,7 +28,7 @@ public class TripsController : ControllerBase
         {
             return StatusCode(StatusCodes.Status500InternalServerError, "Internal Server Error");
         }
-    }
+     }
     
     //Get
     [HttpGet]

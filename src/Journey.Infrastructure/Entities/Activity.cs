@@ -1,7 +1,7 @@
 ﻿using Journey.Infrastructure.Enums;
 
 namespace Journey.Infrastructure.Entities;
-public class Activity
+public abstract class Activity
 {
     public Guid Id { get; set; } = Guid.NewGuid();
     public string Name { get; set; } = string.Empty;

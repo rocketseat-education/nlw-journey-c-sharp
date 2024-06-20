@@ -34,7 +34,7 @@ public class RegisterTripUseCase
         };
     }
 
-    private void Validate(RequestRegisterTripJson request)
+    private static void Validate(RequestRegisterTripJson request)
     {
         if (string.IsNullOrWhiteSpace(request.Name))
         {

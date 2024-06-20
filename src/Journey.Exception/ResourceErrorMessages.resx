@@ -27,7 +27,4 @@
     <data name="END_DATE_TRIP_MUST_BE_LATER_START_DATE" xml:space="preserve">
         <value>EndDate must</value>
     </data>
-    <data name="END_DATE" xml:space="preserve">
-        <value>must enddate</value>
-    </data>
 </root>

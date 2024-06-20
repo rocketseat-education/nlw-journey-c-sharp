@@ -62,11 +62,5 @@ namespace Journey.Exception {
                 return ResourceManager.GetString("END_DATE_TRIP_MUST_BE_LATER_START_DATE", resourceCulture);
             }
         }
-        
-        public static string END_DATE {
-            get {
-                return ResourceManager.GetString("END_DATE", resourceCulture);
-            }
-        }
     }
 }
