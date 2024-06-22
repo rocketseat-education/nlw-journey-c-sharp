@@ -27,28 +27,23 @@ public class RegisterTripUseCase
 
         return new ResponseShortTripJson
         {
-            EndDate = entity.EndDate,
-            StartDate = entity.StartDate,
+            Id = entity.Id,
             Name = entity.Name,
-            Id = entity.Id
+            StartDate = entity.StartDate,
+            EndDate = entity.EndDate,
         };
     }
 
-    private static void Validate(RequestRegisterTripJson request)
+    private void Validate(RequestRegisterTripJson request)
     {
-        if (string.IsNullOrWhiteSpace(request.Name))
-        {
-            throw new JourneyException(ResourceErrorMessages.NAME_EMPTY);
-        }
+        var validator = new RegisterTripValidator();
+        var result = validator.Validate(request);
         
-        if (request.StartDate < DateTime.UtcNow.Date)
+        if (result.IsValid == false)
         {
-            throw new JourneyException(ResourceErrorMessages.DATE_TRIP_MUST_BE_LATER_THAN_TODAY);
-        }
-        
-        if (request.EndDate.Date <= request.StartDate.Date)
-        {
-            throw new JourneyException(ResourceErrorMessages.END_DATE_TRIP_MUST_BE_LATER_START_DATE);
+            var errorMessages = result.Errors.Select(error => error.ErrorMessage).ToList();
+            
+            throw new ErrorOnValidationException(errorMessages);
         }
     }
 }

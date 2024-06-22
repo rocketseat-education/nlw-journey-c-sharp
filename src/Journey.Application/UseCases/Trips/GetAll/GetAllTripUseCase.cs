@@ -1,9 +1,5 @@
-using Journey.Communication.Requests;
 using Journey.Communication.Responses;
-using Journey.Exception;
-using Journey.Exception.ExceptionsBase;
 using Journey.Infrastructure;
-using Journey.Infrastructure.Entities;
 
 namespace Journey.Application.UseCases.Trips.GetAll;
 
