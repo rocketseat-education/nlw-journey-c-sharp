@@ -12,10 +12,4 @@ public class JourneyDbContext : DbContext
     {
         optionsBuilder.UseSqlite("Data Source=../../../../RiderProjects/nlw3-Journey/src/Journey.Infrastructure/JourneyDatabase.db");
     }
-
-    // protected override void OnModelCreating(ModelBuilder modelBuilder)
-    // {
-    //     base.OnModelCreating(modelBuilder);
-    //     modelBuilder.Entity<Activity>().ToTable("Activities");
-    // }
 }

@@ -27,4 +27,16 @@
     <data name="END_DATE_TRIP_MUST_BE_LATER_START_DATE" xml:space="preserve">
         <value>EndDate must</value>
     </data>
+    <data name="END_DATE" xml:space="preserve">
+        <value>must end date</value>
+    </data>
+    <data name="DATE_NOT_WITHIN_TRAVEL_PERIOD" xml:space="preserve">
+        <value>Date Not Within Travel Period</value>
+    </data>
+    <data name="ACTIVITY_NOT_FOUND" xml:space="preserve">
+        <value>Activity Not Found</value>
+    </data>
+    <data name="TRIP_NOT_FOUND" xml:space="preserve">
+        <value>Trip Not Found</value>
+    </data>
 </root>

@@ -22,7 +22,9 @@
   <ItemGroup>
     <EmbeddedResource Remove="ResourcesNovo.resx" />
     <EmbeddedResource Remove="ResourceErrorMessages.resx" />
-    <Resource Include="ResourceErrorMessages.resx" />
+    <Resource Include="ResourceErrorMessages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </Resource>
   </ItemGroup>
 
 </Project>
